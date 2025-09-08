@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Anime — Details</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header>
+  <h1><a href="index.html">Anime Hub</a></h1>
+</header>
+
+<main>
+  <section id="animeInfo">
+    <h2 id="title">Loading...</h2>
+    <div id="meta" class="meta"></div>
+    <p id="synopsis"></p>
+  </section>
+
+  <section id="episodesSection">
+    <h3>Episodes</h3>
+    <div id="episodesList" class="grid"></div>
+  </section>
+</main>
+
+<script src="assets/script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    window.app.initAnime();
+  });
+</script>
+</body>
+</html>

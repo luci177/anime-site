@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Anime Hub — Trending & Search</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header>
+  <h1><a href="index.html">Anime Hub</a></h1>
+  <div class="search">
+    <input id="searchBox" placeholder="Search anime (e.g. naruto)"/>
+    <button id="searchBtn">Search</button>
+  </div>
+</header>
+
+<main>
+  <section id="trending">
+    <h2>Trending</h2>
+    <div id="trendingList" class="grid"></div>
+  </section>
+
+  <section id="results" style="display:none;">
+    <h2>Search Results</h2>
+    <div id="resultsList" class="grid"></div>
+  </section>
+</main>
+
+<script src="assets/script.js"></script>
+<script>
+  // page-specific init
+  document.addEventListener('DOMContentLoaded', () => {
+    window.app.initIndex();
+  });
+</script>
+</body>
+</html>

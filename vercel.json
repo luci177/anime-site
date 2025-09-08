@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/anime.html", "destination": "/anime.html" },
+    { "source": "/watch.html", "destination": "/watch.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

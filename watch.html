@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Watch — Anime Hub</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header>
+  <h1><a href="index.html">Anime Hub</a></h1>
+</header>
+
+<main>
+  <section id="playerSection">
+    <h2 id="watchTitle">Loading player...</h2>
+    <div class="player-wrap">
+      <iframe id="player" src="" width="100%" height="560" allowfullscreen frameborder="0"></iframe>
+    </div>
+  </section>
+</main>
+
+<script src="assets/script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    window.app.initWatch();
+  });
+</script>
+</body>
+</html>
