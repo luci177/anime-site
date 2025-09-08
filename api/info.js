@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  const { id } = req.query; // ?id=one-piece
+  const { id } = req.query; // ?id=city-the-animation-episode-10
   if (!id) return res.status(400).json({ error: "Missing anime id" });
 
   try {
