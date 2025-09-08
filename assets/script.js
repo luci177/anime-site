@@ -10,7 +10,7 @@ window.app = (function(){
   const API_BASE = "https://animeapi.skin";
   // OPTIONAL: If you have a proxy (your own Vercel proxy) that forwards requests, put it here. Example:
   // const PROXY_BASE = "https://your-proxy.vercel.app"; // leave empty if not needed
-  const PROXY_BASE = ""; // <<--- set this if animeapi.skin blocks CORS. Example: "https://api-consumet-org-fawn.vercel.app"
+  const PROXY_BASE = "https://api-consumet-org-fawn.vercel.app"; // <<--- set this if animeapi.skin blocks CORS. Example: "https://api-consumet-org-fawn.vercel.app"
 
   // Helper to build fetch URL (use proxy if set)
   function apiUrl(path){
